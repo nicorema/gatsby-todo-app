@@ -6,7 +6,6 @@ import Map from '../components/map/Map'
 
 const TodosLog = ({ todos }) => {
   const markers = todos.filter(todo => todo.location)
-
   return (
     <Layout title={<FormattedMessage id="todos.log.title" />}>
       <div>
