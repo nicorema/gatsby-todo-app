@@ -8,7 +8,7 @@ exports[`Todos Log Page renders correctly 1`] = `
     className="sc-dlnjPT eSGkCO"
   >
     <h1>
-      Todos Log
+      todos.log.title
     </h1>
   </header>
   <div>
@@ -84,7 +84,8 @@ exports[`Todos Log Page renders correctly 1`] = `
             className="css-qyfojd"
           >
             <a
-              href="/todos-manager"
+              href="/en-US/todos-manager"
+              onClick={[Function]}
             >
               Todos Manager
             </a>
@@ -95,7 +96,8 @@ exports[`Todos Log Page renders correctly 1`] = `
             className="css-qyfojd"
           >
             <a
-              href="/todos-log"
+              href="/en-US/todos-log"
+              onClick={[Function]}
             >
               Todos Log
             </a>

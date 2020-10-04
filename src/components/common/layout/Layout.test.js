@@ -1,5 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import { renderWithProviders } from '../../../TestUtils'
 
 import Layout from './Layout'
 
@@ -8,9 +9,11 @@ describe('Layout', () => {
     onClick: jest.fn(),
   }
   const layoutCmp = renderer.create(
-    <Layout title="test title" stickyAction={stickyAction}>
-      <p>Testing child</p>
-    </Layout>
+    renderWithProviders(
+      <Layout title="test title" stickyAction={stickyAction}>
+        <p>Testing child</p>
+      </Layout>
+    )
   )
 
   it('renders correctly', () => {
@@ -25,9 +28,11 @@ describe('Layout', () => {
 
   it('does not render button when there is no stickyAction', () => {
     layoutCmp.update(
-      <Layout title="test title">
-        <p>Testing child</p>
-      </Layout>
+      renderWithProviders(
+        <Layout title="test title">
+          <p>Testing child</p>
+        </Layout>
+      )
     )
     const button = layoutCmp.root.findAllByType('button')
     expect(button).toHaveLength(0)

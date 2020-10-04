@@ -33,7 +33,8 @@ exports[`Layout renders correctly 1`] = `
             className="css-qyfojd"
           >
             <a
-              href="/todos-manager"
+              href="/en-US/todos-manager"
+              onClick={[Function]}
             >
               Todos Manager
             </a>
@@ -44,7 +45,8 @@ exports[`Layout renders correctly 1`] = `
             className="css-qyfojd"
           >
             <a
-              href="/todos-log"
+              href="/en-US/todos-log"
+              onClick={[Function]}
             >
               Todos Log
             </a>

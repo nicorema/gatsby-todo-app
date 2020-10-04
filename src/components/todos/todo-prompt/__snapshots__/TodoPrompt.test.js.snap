@@ -8,7 +8,7 @@ Array [
     onClick={[MockFunction]}
   />,
   <form
-    className="sc-dlnjPT jaFted"
+    className="sc-dlnjPT bdTOYY"
     data-testid="create-todo"
     onSubmit={[Function]}
   >
@@ -16,14 +16,14 @@ Array [
       className="css-1nncrbt"
       htmlFor="description"
     >
-      Información del Todo
+      todos.prompt.todo.description.label
     </label>
     <textarea
       className="css-16gg0af"
       data-testid="todo-description-input"
       id="description"
       onChange={[Function]}
-      placeholder="Descripción del Todo"
+      placeholder="todos.prompt.todo.description.placeholder"
       required={true}
       value="Loren Ipsum"
     />
@@ -31,7 +31,7 @@ Array [
       className="sc-bdnylx fXrGza"
     >
       <button>
-        Confirmar
+        todos.prompt.todo.create.label
       </button>
     </div>
   </form>,

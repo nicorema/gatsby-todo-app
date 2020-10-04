@@ -2,6 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import renderer from 'react-test-renderer'
 import configureStore from 'redux-mock-store'
+import { renderWithProviders } from '../TestUtils'
 
 import TodoLog from './todos-log'
 
@@ -15,10 +16,13 @@ describe('Todos Log Page', () => {
     store = mockStore({
       app: { todos: [] },
     })
+
     todoLogCmp = renderer.create(
-      <Provider store={store}>
-        <TodoLog />
-      </Provider>
+      renderWithProviders(
+        <Provider store={store}>
+          <TodoLog />
+        </Provider>
+      )
     )
   })
 
