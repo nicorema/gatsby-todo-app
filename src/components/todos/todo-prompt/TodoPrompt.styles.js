@@ -37,12 +37,12 @@ export const StyledForm = styled.form`
     w-10/12
   `}
   flex-direction: column;
-  height: 40%;
+  height: 60%;
   position: absolute;
   top: 5%;
   z-index: 200;
   @media (min-width: ${BREAKPOINTS.md}) {
-    max-height: 60%;
+    height: 40%;
   }
 `
 

@@ -9,6 +9,8 @@ const IndexPage = () => (
         fontSize: '1.3rem',
         fontWeight: 'normal',
         lineHeight: '6rem',
+        paddingRight: 5,
+        paddingLeft: 5,
         textAlign: 'center',
       }}
     >
@@ -18,11 +20,11 @@ const IndexPage = () => (
       <address style={{ fontStyle: 'normal' }}>
         <ul>
           <li>
-          <FormattedMessage id="index.personalInfo.createdBy" />
+            <FormattedMessage id="index.personalInfo.createdBy" />
             Nicolás Restrepo Mantilla
           </li>
           <li>
-          <FormattedMessage id="index.personalInfo.email" />
+            <FormattedMessage id="index.personalInfo.email" />
             <a href="mailto:nicolas.restrepo.mantilla@gmail.com">
               nicolas.restrepo.mantilla@gmail.com
             </a>

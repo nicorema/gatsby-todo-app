@@ -22,7 +22,7 @@ const TodosManager = ({ todos, createTodo, deleteTodo, editTodo }) => {
     try {
       userLocation = await getCurrentLocation()
     } catch (err) {
-      alert(intl.formatMessage({ id: "todos.manager.location.error" }))
+      alert(intl.formatMessage({ id: 'todos.manager.location.error' }))
       console.error(err)
     }
 
@@ -42,7 +42,7 @@ const TodosManager = ({ todos, createTodo, deleteTodo, editTodo }) => {
   }
 
   const stickyAction = {
-    label: intl.formatMessage({ id: "todos.manager.create.label" }),
+    label: intl.formatMessage({ id: 'todos.manager.create.label' }),
     onClick: () => {
       setShowPrompt(true)
       setCurrentEditingTodoId(null)

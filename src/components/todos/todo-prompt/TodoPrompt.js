@@ -27,16 +27,22 @@ const TodoPrompt = ({
         onClick={closePrompt}
       ></StyledOverlay>
       <StyledForm data-testid="create-todo" onSubmit={handleSumbitForm}>
-        <StyledLabel htmlFor="description">{intl.formatMessage({ id: "todos.prompt.todo.description.label" })}</StyledLabel>
+        <StyledLabel htmlFor="description">
+          {intl.formatMessage({ id: 'todos.prompt.todo.description.label' })}
+        </StyledLabel>
         <StyledInput
           data-testid="todo-description-input"
           id="description"
-          placeholder={intl.formatMessage({ id: "todos.prompt.todo.description.placeholder" })}
+          placeholder={intl.formatMessage({
+            id: 'todos.prompt.todo.description.placeholder',
+          })}
           value={todoDescription}
           onChange={({ target }) => setTodoDescription(target.value)}
           required
         ></StyledInput>
-        <Button label={intl.formatMessage({ id: "todos.prompt.todo.create.label" })} />
+        <Button
+          label={intl.formatMessage({ id: 'todos.prompt.todo.create.label' })}
+        />
       </StyledForm>
     </>
   )
